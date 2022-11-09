@@ -4,7 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		//System.out.println("G'day mate");
-		Cat normCat = new Cat();		
+		Walkable normCat = new Cat();
+		Walkable dog = new Dog();
+		
+		normCat.walk();
+		dog.walk();
+	}
+	
+	public void takeMeToThePark(Walkable walkable) {
+		walkable.walk();
+		
 	}
 
 }
