@@ -22,7 +22,7 @@ public class Cat extends Animal implements Walkable, Fighttable{
 	}
 	@Override
 	public void bite() {
-		System.out.println("BITEEE");
+		System.out.println("BITEEEE");
 		
 	}
 }
