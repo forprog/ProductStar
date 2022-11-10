@@ -1,6 +1,6 @@
 package Part_1_5;
 
-public class Car {
+public class Car implements Driveable {
 	private String name;
 	private int power;
 	private int weight;
@@ -49,5 +49,11 @@ public class Car {
 		this.power = power;
 		this.weight = weight;
 		this.type = type;
+	}
+	@Override
+	public void drive() {
+		this.engine.start();
+		this.wheel.Turn();
+		this.engine.stop();
 	}
 }
