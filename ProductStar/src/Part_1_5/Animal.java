@@ -2,7 +2,7 @@ package Part_1_5;
 
 public abstract class Animal {
 	int age;
-	String colour;
+	Colour colour;
 	boolean gender;
 	protected int lives;
 

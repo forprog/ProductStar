@@ -1,7 +1,5 @@
 package Part_1_3;
 
-import java.util.Iterator;
-
 public class MultyDimensionalArrays {
 
 	public static void main(String[] args) {
