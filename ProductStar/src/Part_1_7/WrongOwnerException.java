@@ -2,6 +2,11 @@ package Part_1_7;
 
 public class WrongOwnerException extends RuntimeException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7892173537245051967L;
+
 	public WrongOwnerException() {
 		// TODO Auto-generated constructor stub
 	}

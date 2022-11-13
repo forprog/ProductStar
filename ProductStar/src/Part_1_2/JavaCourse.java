@@ -29,11 +29,11 @@ public class JavaCourse
   {
     JavaCourse firstCourse = new JavaCourse (10);
     System.out.println (firstCourse.studentCount);
-    System.out.println (firstCourse.platform);
+    System.out.println (JavaCourse.platform);
     
     JavaCourse secondCourse = new JavaCourse(100);
     System.out.println (secondCourse.studentCount);
-    System.out.println (secondCourse.platform);
+    System.out.println (JavaCourse.platform);
     
     System.out.println (JavaCourse.platform);
     
