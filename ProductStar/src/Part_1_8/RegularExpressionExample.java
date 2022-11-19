@@ -34,8 +34,10 @@ public class RegularExpressionExample {
 		test4("2+3 223 222","2\\+3");
 		test4("23 2+3 2++3 2+++3 345 567","2\\++3");
 		test4("23 2+3 2++3 2+++3 345 567","2\\+*3");
-		test4("*+ *q+ *qq+ *qqq+ *qqq qqq+","\\*q+\\+");*/
+		test4("*+ *q+ *qq+ *qqq+ *qqq qqq+","\\*q+\\+");
 		test4("aba accca azzza awwww a","a\\w+?a");
+		System.out.println(test1("ќго јга јннетушки"));*/
+		System.out.println(test2("ффффф€"));
 		
 		
 		
@@ -67,26 +69,18 @@ public class RegularExpressionExample {
 	}
 	
 	public static boolean test1(String input) {
-		String PATTERN = "a.b";
+		String PATTERN = "ј.+а";
 		Pattern pattern = Pattern.compile(PATTERN);
 		Matcher matcher = pattern.matcher(input);
 				
-		while (matcher.find()) {
-			System.out.println(matcher.group());
-		}
-		
 		return matcher.matches();
 		
 	}
 
 	public static boolean test2(String input) {
-		String PATTERN = "a..a";
+		String PATTERN = "я*ф";
 		Pattern pattern = Pattern.compile(PATTERN);
 		Matcher matcher = pattern.matcher(input);
-				
-		while (matcher.find()) {
-			System.out.println(matcher.group());
-		}
 		
 		return matcher.matches();
 		
