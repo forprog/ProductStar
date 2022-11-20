@@ -15,7 +15,7 @@ public class Account {
 			if (sumToGet <= accountSum) {
 				this.accountSum = this.accountSum - sumToGet;
 			} else {
-				throw new NotEnoughMoneyException();
+				throw new NotEnoughMoneyException("Not enough money");
 			}
 		} else {
 			throw new WrongOwnerException();

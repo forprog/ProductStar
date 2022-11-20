@@ -41,14 +41,16 @@ public class Car implements Driveable {
 	public void setEngine(Engine engine) {
 		this.engine = engine;
 	}
-	public Wheel wheel = new Wheel();
-	public Engine engine = new Engine();
+	public Wheel wheel;
+	public Engine engine;
 	public Car(String name, int power, int weight, CarType type) {
 		super();
 		this.name = name;
 		this.power = power;
 		this.weight = weight;
 		this.type = type;
+		this.wheel = new Wheel();
+		this.engine = new Engine();
 	}
 	@Override
 	public void drive() {
